@@ -11,7 +11,8 @@ var SampleComponent = (function () {
     SampleComponent.decorators = [
         { type: Component, args: [{
                     selector: 'sample-component',
-                    template: "<h1>Sample component</h1>"
+                    template: "<h1>Sample component</h1>",
+                    styles: ["h1 { color: red; } "]
                 },] },
     ];
     /** @nocollapse */
