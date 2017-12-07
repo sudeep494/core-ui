@@ -1,0 +1,28 @@
+{
+  "name": "core-ui",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sudeep494/core-ui"
+  },
+  "author": {
+    "name": "WEBSERVICES\SShrestha",
+    "email": "sudeep494@gmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sudeep494/core-ui/issues"
+  },
+  "main": "core-ui.umd.js",
+  "module": "core-ui.js",
+  "jsnext:main": "core-ui.js",
+  "typings": "core-ui.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
