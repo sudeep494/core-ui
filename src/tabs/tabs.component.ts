@@ -7,7 +7,7 @@ import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 	styleUrls: ['tabs.component.scss']
 })
 
-export class TabsComponent implements OnInit {
+export class CoreTabsComponent implements OnInit {
 	@Input() tabs: any;
 
 	ngOnInit() {

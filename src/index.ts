@@ -4,6 +4,7 @@ import { SampleComponent } from './sample.component';
 import { SampleDirective } from './sample.directive';
 import { SamplePipe } from './sample.pipe';
 import { SampleService } from './sample.service';
+import { CoreTabsComponent } from './tabs/tabs.component';
 
 export * from './sample.component';
 export * from './sample.directive';
@@ -12,24 +13,26 @@ export * from './sample.service';
 
 @NgModule({
   imports: [
-    CommonModule
+	CommonModule
   ],
   declarations: [
-    SampleComponent,
-    SampleDirective,
-    SamplePipe
+	SampleComponent,
+	SampleDirective,
+	SamplePipe,
+	CoreTabsComponent
   ],
   exports: [
-    SampleComponent,
-    SampleDirective,
-    SamplePipe
+	SampleComponent,
+	SampleDirective,
+	SamplePipe,
+	CoreTabsComponent
   ]
 })
 export class SampleModule {
   static forRoot(): ModuleWithProviders {
-    return {
-      ngModule: SampleModule,
-      providers: [SampleService]
-    };
+	return {
+	  ngModule: SampleModule,
+	  providers: [SampleService]
+	};
   }
 }
