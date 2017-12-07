@@ -15,7 +15,7 @@ var SampleComponent = (function () {
         { type: core.Component, args: [{
                     selector: 'sample-component',
                     template: "<h1>Sample component</h1>",
-                    styles: ["h1 { color: red; } "]
+                    styles: ["sample-component { display: block; } sample-component h1 { color: red; } "]
                 },] },
     ];
     /** @nocollapse */
