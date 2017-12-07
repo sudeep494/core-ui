@@ -1,4 +1,4 @@
-import { Component, Directive, ElementRef, Injectable, NgModule, Pipe } from '@angular/core';
+import { Component, Directive, ElementRef, Injectable, NgModule, Pipe, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 /**
@@ -12,7 +12,8 @@ var SampleComponent = (function () {
         { type: Component, args: [{
                     selector: 'sample-component',
                     template: "<h1>Sample component</h1>",
-                    styles: ["sample-component { display: block; } sample-component h1 { color: red; } "]
+                    encapsulation: ViewEncapsulation.None,
+                    styles: ["sample-component { display: block; } sample-component h1 { color: green; } "]
                 },] },
     ];
     /** @nocollapse */
