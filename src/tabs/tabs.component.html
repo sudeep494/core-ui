@@ -1,0 +1,10 @@
+<ul class="nav nav-tabs">
+  <li *ngFor="let tab of tabs" [ngClass]="{'active': tab.active}" class="nav-tab">
+	  <a href="{{tab.link}}">{{tab.label}}</a>
+		<ul class="sub-nav nav-sub-tabs" *ngIf="tab.tabs">
+			<li *ngFor="let subTab of tab.tabs" [ngClass]="{'active': subTab.active}" class="nav-sub-tab">
+				<a href="{{subTab.link}}"> <i class="fa m-r-xxs" [ngClass]="[subTab.icon]"></i> {{subTab.label}}</a>
+			</li>
+		</ul>
+  </li>
+</ul>
